@@ -3,7 +3,6 @@ var context = canvas.getContext('2d');
 var paused = false;
 var grid = 16;
 var count = 0;
-let score = 0;
 
 function resetSnake() {
     var snake = {
@@ -18,6 +17,8 @@ function resetSnake() {
 }
 var snake = resetSnake();
 var food = {x: 320, y: 320};
+
+let score = 0;
 
 // SOUNDS
 let mySound = document.getElementById("foodSound");
@@ -54,7 +55,6 @@ function getRandomInt(min, max) {
   }
 
 function gameLoop() {
-    
     requestAnimationFrame(gameLoop);
     if (++count < 4) return;
     if (paused) throwError();
@@ -64,11 +64,28 @@ function gameLoop() {
     snake.x += snake.dx; 
     snake.y += snake.dy;
 
+
+    
+    // CANVAS
+        // WIDTH
+        if (snake.x < 0) snake.x = canvas.width - grid;
+        else if (snake.x >= canvas.width) snake.x = 0;
+    
+        // HEIGHT
+        if (snake.y < 0) snake.y = canvas.height - grid;
+        else if (snake.y >= canvas.width) snake.y = 0;
+    
+        // REMOVE FOOD
+        if (snake.cells.length > snake.maxCells) snake.cells.pop();
+        
+        // HEAD AT FRONT
+        snake.cells.unshift({x: snake.x, y: snake.y});
+
     // FOOD
     const img = new Image();
     img.src = 'https://cdn-icons-png.flaticon.com/512/3969/3969773.png';
     context.drawImage(img, food.x, food.y, grid-1, grid-1);
-    
+
     // SNAKE
     context.fillStyle = 'green';
     snake.cells.forEach(function(cell, index) {
@@ -85,18 +102,6 @@ function gameLoop() {
             localStorage.setItem("highscore", JSON.stringify(highscoreval));
             highscore.innerHTML = "High Score: " + highscoreval;
         }
-    // WIDTH
-    if (snake.x < 0) snake.x = canvas.width - grid;
-    else if (snake.x >= canvas.width) snake.x = 0;
-
-    // HEIGHT
-    if (snake.y < 0) snake.y = canvas.height - grid;
-    else if (snake.y >= canvas.width) snake.y = 0;
-
-    // REMOVE FOOD
-    if (snake.cells.length > snake.maxCells) snake.cells.pop();
-      
-    snake.cells.unshift({x: snake.x, y: snake.y});
 }
     // GAME OVER IF SNAKE HITS ITSELF
     for (var i = index + 1; i < snake.cells.length; i++) {
@@ -107,7 +112,7 @@ function gameLoop() {
         gameOverSound.play(); // sound plays and game resets
         score = 0;
         document.getElementById('score').innerHTML = "Score: " + 0;
-    }
+        }
     }
 });
 }
