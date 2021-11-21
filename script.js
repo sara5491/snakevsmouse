@@ -48,7 +48,7 @@ function toggleSound() {
     }
 }
 
-/* SCORES */
+// SCORES
 let highscore = localStorage.getItem("highscore");
 if (highscore === null) {
     highscoreval = 0;
@@ -59,8 +59,10 @@ else {
     highscoreBox.innerHTML = "High Score: " + highscore;
 }
 
-/* GAME PLAY */
-const getRandomInt = (mn, mx) => Math.floor(Math.random() * (mx - mn)) + mn;
+// GAME PLAY
+function getRandomInt(mn, mx) {
+    return Math.floor(Math.random() * (mx - mn)) + mn;
+}
 
 function gameLoop() {
     
@@ -73,3 +75,24 @@ function gameLoop() {
     snake.x += snake.dx; 
     snake.y += snake.dy;
 
+    // FOOD
+    const img = new Image();
+    img.src = 'https://cdn-icons-png.flaticon.com/512/3969/3969773.png';
+    context.drawImage(img, food.x, food.y, grid-1, grid-1);
+    
+    // SNAKE
+    context.fillStyle = '#5E548E';
+    snake.cells.forEach(function(cell, index) {
+        context.fillRect(cell.x, cell.y, grid-1, grid-1)
+        if (cell.x === food.x && cell.y == food.y) {
+            snake.maxCells++;
+            food.x = getRandomInt(0, 25) * grid;
+            food.y = getRandomInt(0, 25) * grid;
+            score += 1;
+            foodSound.play();
+            document.getElementById('score').innerHTML = "Score: " + score;
+        if (score > highscoreval) {
+            highscoreval = score;
+            localStorage.setItem("highscore", JSON.stringify(highscoreval));
+            highscoreBox.innerHTML = "High Score: " + highscoreval;
+        }
