@@ -122,7 +122,12 @@ function gameLoop() {
         food.y = getRandomInt(0, 25) * grid;
         gameOverSound.play(); // sound plays and game resets
         score = 0;
-        alert("Game Over. Press OK to play again!");
+        swal({
+            title: "Game Over!",
+            text: "Press OK to play again.",
+            icon: "error",
+            button: "OK",
+          });
         document.getElementById('score').innerHTML = "Score: " + 0;
         }
     }
