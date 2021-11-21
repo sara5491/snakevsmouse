@@ -186,3 +186,90 @@ canvas {
  cursor: pointer;
 }
 
+/* MEDIA QUERIES */
+@media only screen and (max-width: 414px) {
+    #logo {
+      font-size: 35px;
+      letter-spacing: 10px;
+    }
+  
+    canvas {
+      width: 300px;
+      margin-top: 30px;
+    }
+  
+    #settings {
+      width: 350px;
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 320px) {
+    #logo {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+  
+    canvas {
+      width: 250px;
+    }
+  
+    #settings {
+      padding: 0;
+      justify-content: space-evenly;
+      width: 300px;
+    }
+  
+    .pause, .bttns {
+      padding: 5px;
+    }
+  }
+  
+  @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+      
+    #logo {
+      font-size: 60px;
+    }
+  
+    canvas {
+      width: 500px;
+    }
+  
+    #highscoreBox,
+    #score {
+    font-size: 30px;
+  }
+  }
+  
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) {
+      #logo {
+        font-size: 80px;
+      }
+      canvas {
+        width: 800px;
+      }
+      #highscoreBox,
+      #score {
+      font-size: 30px;
+      }
+      #settings {
+        margin-top: 30px;
+      }
+    }
+  
+  @media only screen 
+  and (min-device-width: 540px)
+  and (max-device-width: 540px) {
+    #settings {
+      width: 400px;
+      padding: 0;
+    }
+  
+    #logo {
+      margin: 20px;
+    }
+  }

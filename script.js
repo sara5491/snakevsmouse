@@ -33,7 +33,7 @@ audioOff.addEventListener('click', toggleSound);
 mySound.muted = true;
 mySound2.muted = true;
 
-//TOGGLE SOUNDS - audio muted until toggled on
+// TOGGLE SOUNDS - audio muted until toggled on
 function toggleSound() {
     mySound.muted = !mySound.muted;
     mySound2.muted = !mySound2.muted;
@@ -48,21 +48,10 @@ function toggleSound() {
     }
 }
 
-// SCORES
-let highscore = localStorage.getItem("highscore");
-if (highscore === null) {
-    highscoreval = 0;
-    localStorage.setItem("highscore", JSON.stringify(highscoreval))
-}
-else {
-    highscoreval = JSON.parse(highscore);
-    highscoreBox.innerHTML = "High Score: " + highscore;
-}
-
 // GAME PLAY
-function getRandomInt(mn, mx) {
-    return Math.floor(Math.random() * (mx - mn)) + mn;
-}
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
 
 function gameLoop() {
     
@@ -81,9 +70,9 @@ function gameLoop() {
     context.drawImage(img, food.x, food.y, grid-1, grid-1);
     
     // SNAKE
-    context.fillStyle = '#5E548E';
+    context.fillStyle = 'green';
     snake.cells.forEach(function(cell, index) {
-        context.fillRect(cell.x, cell.y, grid-1, grid-1)
+        context.fillRect(cell.x, cell.y, grid-1, grid-1);
         if (cell.x === food.x && cell.y == food.y) {
             snake.maxCells++;
             food.x = getRandomInt(0, 25) * grid;
@@ -94,7 +83,7 @@ function gameLoop() {
         if (score > highscoreval) {
             highscoreval = score;
             localStorage.setItem("highscore", JSON.stringify(highscoreval));
-            highscoreBox.innerHTML = "High Score: " + highscoreval;
+            highscore.innerHTML = "High Score: " + highscoreval;
         }
     // WIDTH
     if (snake.x < 0) snake.x = canvas.width - grid;
@@ -119,7 +108,7 @@ function gameLoop() {
         score = 0;
         document.getElementById('score').innerHTML = "Score: " + 0;
     }
-}
+    }
 });
 }
 
@@ -146,3 +135,46 @@ document.addEventListener('keydown', function(e) {
         document.querySelector('.pause').innerHTML = paused ? 'Play':'Pause';
     }
 });
+
+function left() {
+    if (snake.dx === 0) {
+        snake.dx = -grid;
+        snake.dy = 0;
+    }
+};
+function right() {
+    if (snake.dx === 0) {
+        snake.dx = grid;
+        snake.dy = 0;
+    }
+};
+function up() {
+    if (snake.dy === 0) {
+        snake.dy = -grid;
+        snake.dx = 0;
+    }
+};
+function down() {
+    if (snake.dy === 0) {
+        snake.dy = grid;
+        snake.dx = 0;
+    }  
+};
+function pause() {
+    paused = !paused;
+    document.querySelector('.pause').innerHTML = paused ? 'Play' : 'Pause';
+}
+
+
+// SCORES
+let highscore = localStorage.getItem("highscore");
+if (highscore === null) {
+    highscoreval = 0;
+    localStorage.setItem("highscore", JSON.stringify(highscoreval));
+}
+else {
+    highscoreval = JSON.parse(highscore);
+    highscore.innerHTML = "High Score: " + highscore;
+}
+
+requestAnimationFrame(gameLoop);
