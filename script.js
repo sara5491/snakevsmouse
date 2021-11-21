@@ -89,10 +89,60 @@ function gameLoop() {
             food.x = getRandomInt(0, 25) * grid;
             food.y = getRandomInt(0, 25) * grid;
             score += 1;
-            foodSound.play();
+            foodSound.play(); // sound plays when snake eats mouse
             document.getElementById('score').innerHTML = "Score: " + score;
         if (score > highscoreval) {
             highscoreval = score;
             localStorage.setItem("highscore", JSON.stringify(highscoreval));
             highscoreBox.innerHTML = "High Score: " + highscoreval;
         }
+    // WIDTH
+    if (snake.x < 0) snake.x = canvas.width - grid;
+    else if (snake.x >= canvas.width) snake.x = 0;
+
+    // HEIGHT
+    if (snake.y < 0) snake.y = canvas.height - grid;
+    else if (snake.y >= canvas.width) snake.y = 0;
+
+    // REMOVE FOOD
+    if (snake.cells.length > snake.maxCells) snake.cells.pop();
+      
+    snake.cells.unshift({x: snake.x, y: snake.y});
+}
+    // GAME OVER IF SNAKE HITS ITSELF
+    for (var i = index + 1; i < snake.cells.length; i++) {
+    if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+        snake = resetSnake();
+        food.x = getRandomInt(0, 25) * grid;
+        food.y = getRandomInt(0, 25) * grid;
+        gameOverSound.play(); // sound plays and game resets
+        score = 0;
+        document.getElementById('score').innerHTML = "Score: " + 0;
+    }
+}
+});
+}
+
+// KEYBOARD CONTROLS
+document.addEventListener('keydown', function(e) {
+    if (e.which === 37 && snake.dx === 0) {
+        snake.dx = -grid;
+        snake.dy = 0;
+    }
+    else if (e.which === 38 && snake.dy === 0) {
+        snake.dy = -grid;
+        snake.dx = 0;
+    }
+    else if (e.which === 39 && snake.dx === 0) {
+        snake.dx = grid;
+        snake.dy = 0;
+    }
+    else if (e.which === 40 && snake.dy === 0) {
+        snake.dy = grid;
+        snake.dx = 0;
+    }
+    else if (e.which == 32) {
+        paused = !paused;
+        document.querySelector('.pause').innerHTML = paused ? 'Play':'Pause';
+    }
+});
