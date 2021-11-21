@@ -8,6 +8,7 @@
     <title>SNAKE VS MOUSE</title>
 </head>
 <body>
+    <!--HEADING-->
     <div class="logo">
         <h1 id="logo">SNAKE VS MOUSE</h1>
     </div>
@@ -40,7 +41,39 @@
             </div>
         </div>
     </div>
+    <!--BACKGROUND SHAPE-->
+    <section class="shape"></section>
 
+    <!--CONTROL ARROWS-->
+    <div class="arrowControls">
+        <button class="bttns" onmousedown="up()">↑</button>
+        <button class="bttns" onmousedown="down()">↓</button>
+        <button class="bttns" onmousedown="left()">←</button>
+        <button class="bttns" onmousedown="right()">→</button>
+        <button class="pause" onmousedown="pause()" class="pause">Pause</button>
+    </div>
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit Facebook (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit Twitter (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit Youtube (opens in a new tab)"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit Instagram (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
 <script src="script.js"></script>
 </body>
 </html>
