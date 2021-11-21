@@ -33,7 +33,7 @@ audioOff.addEventListener('click', toggleSound);
 mySound.muted = true;
 mySound2.muted = true;
 
-//TOGGLE SOUNDS
+//TOGGLE SOUNDS - audio muted until toggled on
 function toggleSound() {
     mySound.muted = !mySound.muted;
     mySound2.muted = !mySound2.muted;
@@ -47,4 +47,29 @@ function toggleSound() {
         console.log("sound");
     }
 }
+
+/* SCORES */
+let highscore = localStorage.getItem("highscore");
+if (highscore === null) {
+    highscoreval = 0;
+    localStorage.setItem("highscore", JSON.stringify(highscoreval))
+}
+else {
+    highscoreval = JSON.parse(highscore);
+    highscoreBox.innerHTML = "High Score: " + highscore;
+}
+
+/* GAME PLAY */
+const getRandomInt = (mn, mx) => Math.floor(Math.random() * (mx - mn)) + mn;
+
+function gameLoop() {
+    
+    requestAnimationFrame(gameLoop);
+    if (++count < 4) return;
+    if (paused) throwError();
+    count = 0;
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    snake.x += snake.dx; 
+    snake.y += snake.dy;
 
