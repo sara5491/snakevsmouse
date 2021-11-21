@@ -11,9 +11,34 @@
     <div class="logo">
         <h1 id="logo">SNAKE VS MOUSE</h1>
     </div>
-
+    <!--GAME AREA-->
     <div id="game-board">
         <canvas width="400" height="400" id="game"></canvas>
+    </div>
+    <!--SCORES AND SETTINGS-->
+    <div id="settings">
+        <div id="score">Score: 0</div>
+        <div id="highscoreBox">High Score: 0</div>
+        <audio id="foodSound" src="music/food.wav">Your browser does not support the audio element.</audio>
+        <audio id="gameOverSound" src="music/gameOver.wav">Your brower does not support the audio element.</audio>
+        <button id="playerOff" type="button"><i class="fas fa-volume-mute"></i></button>
+        <button id="playerOn" type="button"><i class="fas fa-volume-up"></i></button>
+        <nav>
+        <button class="nav-btn" id="how-btn" aria-label="View rules and controls">
+        <i class="far fa-question-circle"></i>
+        </button>
+        </nav>
+        
+        <div id="how-modal" class="modal">
+            <div class="modal-container" id="how-container">
+                <span class="float-right close" id="how-close"><i class="fas fa-times"></i></span>
+            <div>
+                <h2>Rules</h2>
+                Use your keyboard's arrow keys or the controls on the screen to guide the snake around the board. As the snake eats a mouse,
+                it gets longer. The snake dies if it runs into itself. Press the spacebar to pause the game at any time.
+            </div>
+            </div>
+        </div>
     </div>
 
 <script src="script.js"></script>
