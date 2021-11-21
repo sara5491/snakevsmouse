@@ -20,6 +20,17 @@ var food = {x: 320, y: 320};
 
 let score = 0;
 
+// SCORES
+let highscore = localStorage.getItem("highscore");
+if (highscore === null) {
+    highscoreval = 0;
+    localStorage.setItem("highscore", JSON.stringify(highscoreval));
+}
+else {
+    highscoreval = JSON.parse(highscore);
+    highscoreBox.innerHTML = "High Score: " + highscore;
+}
+
 // SOUNDS
 let mySound = document.getElementById("foodSound");
 let mySound2 = document.getElementById("gameOverSound");
@@ -100,7 +111,7 @@ function gameLoop() {
         if (score > highscoreval) {
             highscoreval = score;
             localStorage.setItem("highscore", JSON.stringify(highscoreval));
-            highscore.innerHTML = "High Score: " + highscoreval;
+            highscoreBox.innerHTML = "High Score: " + highscoreval;
         }
 }
     // GAME OVER IF SNAKE HITS ITSELF
@@ -111,6 +122,7 @@ function gameLoop() {
         food.y = getRandomInt(0, 25) * grid;
         gameOverSound.play(); // sound plays and game resets
         score = 0;
+        alert("Game Over. Press OK to play again!");
         document.getElementById('score').innerHTML = "Score: " + 0;
         }
     }
@@ -169,17 +181,4 @@ function pause() {
     paused = !paused;
     document.querySelector('.pause').innerHTML = paused ? 'Play' : 'Pause';
 }
-
-
-// SCORES
-let highscore = localStorage.getItem("highscore");
-if (highscore === null) {
-    highscoreval = 0;
-    localStorage.setItem("highscore", JSON.stringify(highscoreval));
-}
-else {
-    highscoreval = JSON.parse(highscore);
-    highscore.innerHTML = "High Score: " + highscore;
-}
-
 requestAnimationFrame(gameLoop);
