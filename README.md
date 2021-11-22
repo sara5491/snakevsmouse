@@ -54,7 +54,7 @@ I used an image of a mouse, rather than a plain coloured cell as the 'food' beca
 There are two different sounds within the game - a squeak when the snake eats a mouse and a negative 'bong' sound when the snake runs into itself and it's game over. The audio is muted when the game begins but can be toggled on and off by clicking on the speaker icon.
 
 #### Wireframes
-Wireframes for desktop and mobile can be found here wireframes
+Wireframes for desktop and mobile can be found [here] (https://github.com/sara5491/snakevsmouse/tree/main/wireframes)
 
 
 ## FEATURES
@@ -64,11 +64,11 @@ Wireframes for desktop and mobile can be found here wireframes
 - High scores - each player's score is saved in local storage so if the game is ended and returned to at a later date, the player's high score is still there. This will encourage users to return to the game.
 
 #### Future implementation
-- Leaderboard
-- Customisation - difficulty/colours/speed
-- Touch screen controls
-- Obstacles
-- Snake head
+- Leaderboard - shows all players' high scores so the game becomes more competitive.
+- Customisation - players are able to change the speed of the snake/the colours on the page/different food icons.
+- Touch screen controls - the ability to swipe the screen in order to change direction.
+- Obstacles - items that stand in the way of the snake and its food.
+- Snake head - add an icon/design to the head of the snake e.g. eyes and a tongue.
 
 ## TESTING
 #### Responsiveness
