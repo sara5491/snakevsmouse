@@ -81,15 +81,17 @@ Wireframes for desktop and mobile can be found here:
 
 ## BUGS
 #### Fixed Bugs
-- Mouse appearing in same cell as snake.
-- 
-- Score was updating but high score wasn't.
-- ![High score](docs/highscoreerror.png)
-- This was originally working but then I accidentally deleted one line of code (without realising). Once I discovered what I had done, I re-added the 'localStorage' line back in and the high score was updating again.
-- Audio and Instructions buttons were appearing over the shadow of the game area.
-- ![Buttons](docs/buttonerror.png)
-- I sorted this out by making the background colour of the buttons transparent and removing the border.
-- ![Buttons fixed](docs/buttoncorrected.png)
+1) Snake wasn't increasing in size after eating mouse.  
+- Added unshift to add extra square to snake body.  
+2) Snake was eating mouse but it wasn't disappearing.  
+- I used the pop array method to make sure it was being removed.
+3) Score was updating but high score wasn't.  
+![High score](docs/highscoreerror.png)  
+- This was originally working but then I accidentally deleted one line of code (without realising). Once I discovered what I had done, I re-added the 'localStorage' line back in and the high score was updating again.  
+4) Audio and Instructions buttons were appearing over the shadow of the game area.  
+![Buttons](docs/buttonerror.png).  
+- I sorted this out by making the background colour of the buttons transparent and removing the border.  
+![Buttons fixed](docs/buttoncorrected.png)
 
 #### Known Bugs
 - Squeak sound - the sound doesn't always play if one mouse is eaten straight after another.
@@ -148,5 +150,13 @@ Instructions from [GitHub Docs](https://docs.github.com/en/github/creating-cloni
 
 ## CREDITS
 #### Content
+I was inspired by this [Snake game](https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4) for the basic idea and outline of the game however I added many different features.
+This [tutorial](https://www.educative.io/blog/javascript-snake-game-tutorial) was helpful in the creation of my game.
+
 #### Media
+- Sound effects were found on [MixKit](https://mixkit.co/)
+- Mouse icon was from [Flaticon](https://www.flaticon.com/)
+- Icons were found on [FontAwesome](https://fontawesome.com/)
+
 #### Thanks
+The Slack community for their help and guidance.
