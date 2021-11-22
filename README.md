@@ -37,7 +37,18 @@ I wanted to create a game that is easy to use, can be played on multiple devices
 - Arrows which can be used to control the snake on both computers and mobile devices are displayed underneath the game area.
 - A pause button is displayed alongside the arrow controls. The game can also be paused (and started again) by pressing the spacebar.
 - A footer with social media links is shown at the bottom of the page on all devices.
-- A lilac half-oval shape is the main feature of the background which gives the page more depth.
+- A lilac half-oval shape with a shadow is the main feature of the background which gives the page more depth.
+
+#### Font
+I used only one font throughout - Londrina Solid. It has a playful, youthful feel which suits the design of the page.
+
+#### Colours
+I wanted to choose pastel, 'feminine' colours as a contrast to the original 'Snake' game which I remember being very dark, plain with almost garish red and green colours.
+I used <a href="https://coolors.co">Coolors to generate a colour palette - shades of pinks and purples - which are calming and pleasant.
+![Coolors colour palette](docs/coolors.png)
+
+#### Images
+
 ### Wireframes
 
 ## FEATURES
