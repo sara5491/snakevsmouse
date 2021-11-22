@@ -117,7 +117,7 @@ canvas {
  margin: 10px auto;
  position: relative;
  width: 400px;
- padding: 30px;
+ padding: 15px;
 }
 
 #score,
@@ -136,9 +136,9 @@ canvas {
 #playerOff {
  font-size: 18px;
  color: #9F86C0;
- background-color: #E0B1CB;
- border-radius: 50px;
- border: 2px solid #E0B1CB;
+ background-color: transparent;
+ outline: none;
+ border: none;
 }
 
 /* RULES */
@@ -147,8 +147,9 @@ canvas {
  font-size: x-large;
  font-family: "Londrina Solid";
  color: #9F86C0;
- background-color: #E0B1CB;
- border-radius: 50px;
+ background-color: transparent;
+ outline: none;
+ border: none;
 }
   
 .modal {
@@ -177,8 +178,8 @@ canvas {
 .close {
  font-size: 2rem;
  background-color: #BE95C4;
- padding: 0px 2px;
- border: 2.5px solid #231942;
+ padding: 3px;
+ border-radius: 40%;
 }
   
 .close:hover {

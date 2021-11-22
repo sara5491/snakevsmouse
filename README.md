@@ -10,6 +10,7 @@ running into the tail of the snake. It is a very simple concept but very addicti
 # TABLE OF CONTENTS
 
 # PLANNING
+Project Goals
 User Goals
 User Stories
 Design Goals
