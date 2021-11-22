@@ -17,7 +17,15 @@ again and again.
 
 ### User Goals
 The game should be simple enough that it can be played during a short period e.g. while in a doctor's waiting room or on a work break. It should entice the user to keep coming back to it, to try and beat their high score.
+
 ### User Stories
+- As a user I want to immediately understand how to play the game.
+- As a user I want to be able to see my progress (via scores).
+- As a user I want to be able to complete the game within a short time frame.
+- As a user I want to view game instructions, if necessary.
+- As a user I want to play the game on a mobile phone or computer.
+- As a user I want to play a simple and straightforward game.
+
 ### Design Goals
 ### Design Choices
 ### Wireframes

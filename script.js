@@ -98,7 +98,7 @@ function gameLoop() {
     context.drawImage(img, food.x, food.y, grid-1, grid-1);
 
     // SNAKE
-    context.fillStyle = 'green';
+    context.fillStyle = '#006400';
     snake.cells.forEach(function(cell, index) {
         context.fillRect(cell.x, cell.y, grid-1, grid-1);
         if (cell.x === food.x && cell.y == food.y) {
