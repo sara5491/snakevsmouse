@@ -1,38 +1,43 @@
 # SNAKE VS MOUSE
 
-'Snake vs Mouse' is an online game inspired by the classic 'Snake' video game where the user tries to eat as much 'food' as they can without
-running into the tail of the snake. It is a very simple concept but very addictive!
+<a href="https://sara5491.github.io/snakevsmouse/">Play the game</a>
+'Snake vs Mouse' is an online game inspired by the classic 'Snake' video game where the user tries to eat as much 'food' as they can without running into the tail of the snake. It is a very simple concept but very addictive!
 
 ![Am I Responsive? image of website on different devices](docs/amiresponsive.png)
 
-<a href="https://sara5491.github.io/snakevsmouse/">Play the game</a>
+The idea is to guide the snake using the arrows on a keyboard or the controls on the screen to try and eat as many 'mice'
+as possible. Each time a mouse is eaten, the snake grows longer and a point is scored.
 
-# TABLE OF CONTENTS
+## TABLE OF CONTENTS
 
-# PLANNING
-Project Goals
-User Goals
-User Stories
-Design Goals
-Design Choices
-Wireframes
+## PLANNING
+### Project Goals
+The aim is to create an interactive, fun game that is easy to play. It should be enjoyable so players want to play it
+again and again.
 
-# FEATURES
+### User Goals
+The game should be simple enough that it can be played during a short period e.g. while in a doctor's waiting room or on a work break. It should entice the user to keep coming back to it, to try and beat their high score.
+### User Stories
+### Design Goals
+### Design Choices
+### Wireframes
+
+## FEATURES
 Current
 Future
 
-# TESTING
+## TESTING
 Responsiveness
 Lighthouse
 Validators
 
-# BUGS
+## BUGS
 Fixed Bugs
 Known Bugs
 
-# TECHNOLOGIES USED
+## TECHNOLOGIES USED
 
-# DEPLOYMENT
+## DEPLOYMENT
 The project was created in GitPod and deployed to GitHub using the following steps:
 
 1. Log into GitHub
@@ -61,4 +66,4 @@ Cloning a repository
 
 Instructions from [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories)
 
-# CREDITS
+## CREDITS
