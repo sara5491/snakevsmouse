@@ -59,26 +59,44 @@ There are two different sounds within the game - a squeak when the snake eats a 
 #### Current features
 - I created a popup using <a href="https://sweetalert2.github.io/">SweetAlert</a> for when the snake touches its tail and the game is over.
 - There are no 'walls' in the game area. This makes each game last longer as it is easier to play than when the snake is confined to a small square.
-- High scores - each player's score is saved in local storage so if the game is ended and returned to at a later date, the player's high score is still there.
+- High scores - each player's score is saved in local storage so if the game is ended and returned to at a later date, the player's high score is still there. This will encourage users to return to the game.
 
 #### Future implementation
 - Leaderboard
-- Customisation
+- Customisation - difficulty/colours/speed
 - Touch screen controls
-- Different levels
 - Obstacles
 - Snake head
 
 ## TESTING
-Responsiveness
-Lighthouse
-Validators
+#### Responsiveness
+#### Lighthouse
+#### Validators
 
 ## BUGS
-Fixed Bugs
-Known Bugs
+#### Fixed Bugs
+- Mouse appearing in same cell as snake
+
+#### Known Bugs
+- Squeak sound
 
 ## TECHNOLOGIES USED
+#### Languages
+- HTML
+- CSS
+- JavaScript
+
+#### Libraries/Online Resources
+- Google Fonts
+- Font Awesome
+- Favicon
+- Balsamiq
+- Coolors
+- Chrome DevTools
+- Am I Responsive?
+- Sweet Alert
+- MixKit - https://mixkit.co/
+
 
 ## DEPLOYMENT
 The project was created in GitPod and deployed to GitHub using the following steps:
@@ -110,3 +128,6 @@ Cloning a repository
 Instructions from [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories)
 
 ## CREDITS
+#### Content
+#### Media
+#### Thanks
