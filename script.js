@@ -186,4 +186,22 @@ function pause() {
     paused = !paused;
     document.querySelector('.pause').innerHTML = paused ? 'Play' : 'Pause';
 }
+
+let modalBtn = document.getElementsByClassName('nav-btn');
+for (let i = 0; i < modalBtn.length; i++) {
+    modalBtn[i].addEventListener('click', showModal);
+}
+function showModal() {
+    if (this.getAttribute("id") === "how-btn") {
+        document.getElementById('rules-modal').style.display = 'block';
+    }
+}
+document.getElementById('rules-close').onclick = function() {
+    document.getElementById('rules-modal').style.display = "none";
+  };
+window.onclick = function(event) {
+    if (event.target == document.getElementById('rules-modal')) {
+        document.getElementById('rules-modal').style.display = "none";
+    }
+  };
 requestAnimationFrame(gameLoop);
