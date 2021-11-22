@@ -27,7 +27,17 @@ The game should be simple enough that it can be played during a short period e.g
 - As a user I want to play a simple and straightforward game.
 
 ### Design Goals
+I wanted to create a game that is easy to use, can be played on multiple devices, has simple controls and is designed with complementary colours.
+
 ### Design Choices
+#### Layout
+- The game area is in the centre of the page, with the 'snake' displayed as green cells and the 'food' displayed as an image of a mouse.
+- The player's current score, their high score, the audio player button and the instructions are clearly shown above the game area.
+- The instructions open in a container when the ? icon is clicked on.
+- Arrows which can be used to control the snake on both computers and mobile devices are displayed underneath the game area.
+- A pause button is displayed alongside the arrow controls. The game can also be paused (and started again) by pressing the spacebar.
+- A footer with social media links is shown at the bottom of the page on all devices.
+- A lilac half-oval shape is the main feature of the background which gives the page more depth.
 ### Wireframes
 
 ## FEATURES
