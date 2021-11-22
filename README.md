@@ -68,8 +68,10 @@ I wanted to create a game that is easy to use, can be played on multiple devices
 #### Layout
 - The game area is in the centre of the page, with the 'snake' displayed as green cells and the 'food' displayed as an image of a mouse.
 - The player's current score, their high score, the audio player button and the instructions are clearly shown above the game area.
-- The instructions open in a container when the ? icon is clicked on.
-- Arrows which can be used to control the snake on both computers and mobile devices are displayed underneath the game area.
+- The instructions open in a container when the ? icon is clicked on.  
+![Instructions](docs/instructions.png)  
+- Arrows which can be used to control the snake on both computers and mobile devices are displayed underneath the game area.  
+![Arrow controls](docs/controls.png)
 - A pause button is displayed alongside the arrow controls. The game can also be paused (and started again) by pressing the spacebar.
 - A footer with social media links is shown at the bottom of the page on all devices.
 - A lilac half-oval shape with a shadow is the main feature of the background which gives the page more depth.
@@ -83,7 +85,8 @@ I used <a href="https://coolors.co">Coolors</a> to generate a colour palette - s
 ![Coolors colour palette](docs/coolors.png)
 
 #### Images
-I used an image of a mouse, rather than a plain coloured cell as the 'food' because I felt like it gives the game a bit of humour. I also think it makes it different from the other Snake games that are out there. I used a snake favicon so if a user has lots of tabs open in their browser, it is obvious which tab is the game.
+I used an image of a mouse, rather than a plain coloured cell as the 'food' because I felt like it gives the game a bit of humour. I also think it makes it different from the other Snake games that are out there. I used a snake favicon so if a user has lots of tabs open in their browser, it is obvious which tab is the game.  
+![Snake Favicon](docs/icon.png)
 
 #### Audio
 There are two different sounds within the game - a squeak when the snake eats a mouse and a negative 'bong' sound when the snake runs into itself and it's game over. The audio is muted when the game begins but can be toggled on and off by clicking on the speaker icon.
@@ -93,11 +96,13 @@ Wireframes for desktop and mobile can be found here:
 - <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframecanvas.png">Game area</a>
 - <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframeoverview.png">Desktop overview</a>
 - <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframeinstructions.png">Instructions container</a>
-- <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframemobile.png">Mobile phone</a>
+- <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframemobile.png">Mobile phone</a>  
+I was originally going to have the touch controls on the right-hand side of the game area but I found it more user-friendly to have them underneath, especially on a mobile phone.  
 
 ## FEATURES
 #### Current features
 - I created a popup using <a href="https://sweetalert2.github.io/">SweetAlert</a> for when the snake touches its tail and the game is over.
+![Game Over alert](docs/gameoveralert.png)
 - There are no 'walls' in the game area. This makes each game last longer as it is easier to play than when the snake is confined to a small square.
 - High scores - each player's score is saved in local storage so if the game is ended and returned to at a later date, the player's high score is still there. This will encourage users to return to the game.
 

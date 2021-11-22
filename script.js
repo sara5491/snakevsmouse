@@ -1,4 +1,4 @@
-var canvas = document.getElementById('game');
+var canvas = document.getElementById('snakegame');
 var context = canvas.getContext('2d');
 var paused = false;
 var grid = 16;
