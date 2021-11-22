@@ -44,16 +44,30 @@ I used only one font throughout - Londrina Solid. It has a playful, youthful fee
 
 #### Colours
 I wanted to choose pastel, 'feminine' colours as a contrast to the original 'Snake' game which I remember being very dark, plain with almost garish red and green colours.
-I used <a href="https://coolors.co">Coolors to generate a colour palette - shades of pinks and purples - which are calming and pleasant.
+I used <a href="https://coolors.co">Coolors</a> to generate a colour palette - shades of pinks and purples - which are calming and pleasant.
 ![Coolors colour palette](docs/coolors.png)
 
 #### Images
+I used an image of a mouse, rather than a plain coloured cell as the 'food' because I felt like it gives the game a bit of humour. I also think it makes it different from the other Snake games that are out there. I used a snake favicon so if a user has lots of tabs open in their browser, it is obvious which tab is the game.
 
-### Wireframes
+#### Audio
+There are two different sounds within the game - a squeak when the snake eats a mouse and a negative 'bong' sound when the snake runs into itself and it's game over. The audio is muted when the game begins but can be toggled on and off by clicking on the speaker icon.
+
+#### Wireframes
 
 ## FEATURES
-Current
-Future
+#### Current features
+- I created a popup using <a href="https://sweetalert2.github.io/">SweetAlert</a> for when the snake touches its tail and the game is over.
+- There are no 'walls' in the game area. This makes each game last longer as it is easier to play than when the snake is confined to a small square.
+- High scores - each player's score is saved in local storage so if the game is ended and returned to at a later date, the player's high score is still there.
+
+#### Future implementation
+- Leaderboard
+- Customisation
+- Touch screen controls
+- Different levels
+- Obstacles
+- Snake head
 
 ## TESTING
 Responsiveness
