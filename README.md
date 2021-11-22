@@ -1,6 +1,7 @@
 # SNAKE VS MOUSE
 
 <a href="https://sara5491.github.io/snakevsmouse/">Play the game</a>
+
 'Snake vs Mouse' is an online game inspired by the classic 'Snake' video game where the user tries to eat as much 'food' as they can without running into the tail of the snake. It is a very simple concept but very addictive!
 
 ![Am I Responsive? image of website on different devices](docs/amiresponsive.png)
@@ -40,7 +41,7 @@ I wanted to create a game that is easy to use, can be played on multiple devices
 - A lilac half-oval shape with a shadow is the main feature of the background which gives the page more depth.
 
 #### Font
-I used only one font throughout - Londrina Solid. It has a playful, youthful feel which suits the design of the page.
+I used only one font throughout - <a href="https://fonts.google.com/specimen/Londrina+Solid">Londrina Solid.</a> It has a playful, youthful feel which suits the design and style of the page.
 
 #### Colours
 I wanted to choose pastel, 'feminine' colours as a contrast to the original 'Snake' game which I remember being very dark, plain with almost garish red and green colours.
@@ -54,8 +55,11 @@ I used an image of a mouse, rather than a plain coloured cell as the 'food' beca
 There are two different sounds within the game - a squeak when the snake eats a mouse and a negative 'bong' sound when the snake runs into itself and it's game over. The audio is muted when the game begins but can be toggled on and off by clicking on the speaker icon.
 
 #### Wireframes
-Wireframes for desktop and mobile can be found [here] (https://github.com/sara5491/snakevsmouse/tree/main/wireframes)
-
+Wireframes for desktop and mobile can be found here:
+- <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframecanvas.png">Game area</a>
+- <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframeoverview.png">Desktop overview</a>
+- <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframeinstructions.png">Instructions container</a>
+- <a href="https://github.com/sara5491/snakevsmouse/blob/main/wireframes/wireframemobile.png">Mobile phone</a>
 
 ## FEATURES
 #### Current features
