@@ -54,6 +54,8 @@ I used an image of a mouse, rather than a plain coloured cell as the 'food' beca
 There are two different sounds within the game - a squeak when the snake eats a mouse and a negative 'bong' sound when the snake runs into itself and it's game over. The audio is muted when the game begins but can be toggled on and off by clicking on the speaker icon.
 
 #### Wireframes
+Wireframes for desktop and mobile can be found here wireframes
+
 
 ## FEATURES
 #### Current features
