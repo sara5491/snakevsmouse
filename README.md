@@ -9,7 +9,41 @@
 The idea is to guide the snake using the arrows on a keyboard or the controls on the screen to try and eat as many 'mice'
 as possible. Each time a mouse is eaten, the snake grows longer and a point is scored.
 
-## TABLE OF CONTENTS
+- [SNAKE VS MOUSE](#snake-vs-mouse)
+  * [TABLE OF CONTENTS](#table-of-contents)
+  * [PLANNING](#planning)
+    + [Project Goals](#project-goals)
+    + [User Goals](#user-goals)
+    + [User Stories](#user-stories)
+    + [Design Goals](#design-goals)
+    + [Design Choices](#design-choices)
+      - [Layout](#layout)
+      - [Font](#font)
+      - [Colours](#colours)
+      - [Images](#images)
+      - [Audio](#audio)
+      - [Wireframes](#wireframes)
+  * [FEATURES](#features)
+      - [Current features](#current-features)
+      - [Future implementation](#future-implementation)
+  * [TESTING](#testing)
+      - [Responsiveness](#responsiveness)
+      - [Lighthouse](#lighthouse)
+      - [Validators](#validators)
+  * [BUGS](#bugs)
+      - [Fixed Bugs](#fixed-bugs)
+      - [Known Bugs](#known-bugs)
+  * [TECHNOLOGIES USED](#technologies-used)
+      - [Languages](#languages)
+      - [Libraries/Online Resources](#libraries-online-resources)
+  * [DEPLOYMENT](#deployment)
+  * [CREDITS](#credits)
+      - [Content](#content)
+      - [Media](#media)
+      - [Thanks](#thanks)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## PLANNING
 ### Project Goals
@@ -150,8 +184,10 @@ Instructions from [GitHub Docs](https://docs.github.com/en/github/creating-cloni
 
 ## CREDITS
 #### Content
-I was inspired by this [Snake game](https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4) for the basic idea and outline of the game however I added many different features.
-This [tutorial](https://www.educative.io/blog/javascript-snake-game-tutorial) was helpful in the creation of my game.
+I was inspired by this [Snake game](https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4) for the basic idea and outline of the game however I added many different features.  
+This [tutorial](https://www.educative.io/blog/javascript-snake-game-tutorial) along with [this one](https://www.freecodecamp.org/news/how-to-build-a-snake-game-in-javascript/) were helpful in the creation of my game.  
+[W3Schools](https://www.w3schools.com/graphics/game_controllers.asp) - game controllers.  
+[W3Schools](https://www.w3schools.com/graphics/game_movement.asp) - movement.  
 
 #### Media
 - Sound effects were found on [MixKit](https://mixkit.co/)
