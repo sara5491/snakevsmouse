@@ -117,6 +117,7 @@ I was originally going to have the touch controls on the right-hand side of the 
 #### Responsiveness
 #### Lighthouse
 #### Validators
+The HTML file was run through (https://validator.w3.org/) and the CSS file was run through (https://jigsaw.w3.org/css-validator/) and no errors were found. For JavaScript, the file was run through (https://jshint.com/) and no errors were found.
 
 ## BUGS
 #### Fixed Bugs
@@ -130,9 +131,9 @@ I was originally going to have the touch controls on the right-hand side of the 
 4) Audio and Instructions buttons were appearing over the shadow of the game area.  
 ![Buttons](docs/buttonerror.png).  
 - I sorted this out by making the background colour of the buttons transparent and removing the border.  
-![Buttons fixed](docs/buttoncorrected.png)
+![Buttons fixed](docs/buttoncorrected.png)  
 
-#### Known Bugs
+#### Known Bugs / Future Fixes
 - Squeak sound - the sound doesn't always play if one mouse is eaten straight after another.
 - If the keyboard arrow keys are pressed too quickly after each other, the snake runs into itself.
 
@@ -198,6 +199,7 @@ This [tutorial](https://www.educative.io/blog/javascript-snake-game-tutorial) al
 - Sound effects were found on [MixKit](https://mixkit.co/)
 - Mouse icon was from [Flaticon](https://www.flaticon.com/)
 - Icons were found on [FontAwesome](https://fontawesome.com/)
+- Arrow symbols for the controls are from [SymbolCopy](www.symbolcopy.com)  
 
 #### Thanks
 The Slack community for their help and guidance.

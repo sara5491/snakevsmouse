@@ -11,7 +11,7 @@ function resetSnake() {
         dx: grid,
         dy: 0,
         cells: [],
-        maxCells: 3, // GROWS BY 3 AFTER EATING MOUSE
+        maxCells: 3 // GROWS BY 3 AFTER EATING MOUSE
     };
     return snake;
 }
@@ -65,7 +65,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
 
-function gameLoop() {
+  function gameLoop() {
     requestAnimationFrame(gameLoop);
     if (++count < 4) return;
     if (paused) throwError();
@@ -77,27 +77,27 @@ function gameLoop() {
 
 
     
-    // CANVAS
-        // WIDTH
-        if (snake.x < 0) snake.x = canvas.width - grid;
-        else if (snake.x >= canvas.width) snake.x = 0;
+// CANVAS
+// WIDTH
+if (snake.x < 0) snake.x = canvas.width - grid;
+else if (snake.x >= canvas.width) snake.x = 0;
     
-        // HEIGHT
-        if (snake.y < 0) snake.y = canvas.height - grid;
-        else if (snake.y >= canvas.width) snake.y = 0;
+// HEIGHT
+if (snake.y < 0) snake.y = canvas.height - grid;
+else if (snake.y >= canvas.width) snake.y = 0;
     
-        // REMOVE FOOD
-        if (snake.cells.length > snake.maxCells) snake.cells.pop();
+// REMOVE FOOD
+if (snake.cells.length > snake.maxCells) snake.cells.pop();
         
-        // HEAD AT FRONT
-        snake.cells.unshift({x: snake.x, y: snake.y});
+// HEAD AT FRONT
+snake.cells.unshift({x: snake.x, y: snake.y});
 
-    // FOOD
+// FOOD
     const img = new Image();
     img.src = 'https://cdn-icons-png.flaticon.com/512/3969/3969773.png';
     context.drawImage(img, food.x, food.y, grid-1, grid-1);
 
-    // SNAKE
+// SNAKE
     context.fillStyle = '#006400';
     snake.cells.forEach(function(cell, index) {
         context.fillRect(cell.x, cell.y, grid-1, grid-1);
@@ -114,7 +114,7 @@ function gameLoop() {
             highscoreBox.innerHTML = "High Score: " + highscoreval;
         }
 }
-    // GAME OVER IF SNAKE HITS ITSELF
+// GAME OVER IF SNAKE HITS ITSELF
     for (var i = index + 1; i < snake.cells.length; i++) {
     if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
         snake = resetSnake();
@@ -135,24 +135,24 @@ function gameLoop() {
 }
 
 // KEYBOARD CONTROLS
-document.addEventListener('keydown', function(e) {
-    if (e.which === 37 && snake.dx === 0) {
+document.addEventListener("keydown", function (event) {
+    if (event.key == 'ArrowLeft' && snake.dx === 0) {
         snake.dx = -grid;
         snake.dy = 0;
     }
-    else if (e.which === 38 && snake.dy === 0) {
+    else if (event.key == 'ArrowUp' && snake.dy === 0) {
         snake.dy = -grid;
         snake.dx = 0;
     }
-    else if (e.which === 39 && snake.dx === 0) {
+    else if (event.key == 'ArrowRight' && snake.dx === 0) {
         snake.dx = grid;
         snake.dy = 0;
     }
-    else if (e.which === 40 && snake.dy === 0) {
+    else if (event.key == 'ArrowDown' && snake.dy === 0) {
         snake.dy = grid;
         snake.dx = 0;
     }
-    else if (e.which == 32) {
+    else if (event.key == ' ') {
         paused = !paused;
         document.querySelector('.pause').innerHTML = paused ? 'Play':'Pause';
     }
