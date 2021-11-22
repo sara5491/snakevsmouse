@@ -82,17 +82,18 @@ Wireframes for desktop and mobile can be found here:
 ## BUGS
 #### Fixed Bugs
 - Mouse appearing in same cell as snake.
-![Food in snake cell](docs/coolors.png)
+- 
 - Score was updating but high score wasn't.
-![High score](docs/highscoreerror.png)
-This was originally working but then I accidentally deleted one line of code (without realising). Once I discovered what I had done, I re-added the 'localStorage' line back in and the high score was updating again.
+- ![High score](docs/highscoreerror.png)
+- This was originally working but then I accidentally deleted one line of code (without realising). Once I discovered what I had done, I re-added the 'localStorage' line back in and the high score was updating again.
 - Audio and Instructions buttons were appearing over the shadow of the game area.
-![Buttons](docs/buttonerror.png)
-I sorted this out by making the background colour of the buttons transparent and removing the border.
-![Buttons fixed](docs/buttoncorrected.png)
+- ![Buttons](docs/buttonerror.png)
+- I sorted this out by making the background colour of the buttons transparent and removing the border.
+- ![Buttons fixed](docs/buttoncorrected.png)
 
 #### Known Bugs
 - Squeak sound - the sound doesn't always play if one mouse is eaten straight after another.
+- If the keyboard arrow keys are pressed too quickly after each other, the snake runs into itself.
 
 ## TECHNOLOGIES USED
 #### Languages
