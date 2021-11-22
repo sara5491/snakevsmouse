@@ -227,8 +227,8 @@ canvas {
   }
   
   @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    and (min-width: 768px) 
+    and (max-width: 1023px) {
       
     #logo {
       font-size: 60px;
@@ -245,8 +245,8 @@ canvas {
   }
   
   @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) {
+  and (min-width: 1024px) 
+  and (max-width: 1024px) {
       #logo {
         font-size: 80px;
       }
@@ -263,8 +263,8 @@ canvas {
     }
   
   @media only screen 
-  and (min-device-width: 540px)
-  and (max-device-width: 540px) {
+  and (min-width: 540px)
+  and (max-width: 540px) {
     #settings {
       width: 400px;
       padding: 0;
