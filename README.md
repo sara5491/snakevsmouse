@@ -81,10 +81,18 @@ Wireframes for desktop and mobile can be found here:
 
 ## BUGS
 #### Fixed Bugs
-- Mouse appearing in same cell as snake
+- Mouse appearing in same cell as snake.
+![Food in snake cell](docs/coolors.png)
+- Score was updating but high score wasn't.
+![High score](docs/highscoreerror.png)
+This was originally working but then I accidentally deleted one line of code (without realising). Once I discovered what I had done, I re-added the 'localStorage' line back in and the high score was updating again.
+- Audio and Instructions buttons were appearing over the shadow of the game area.
+![Buttons](docs/buttonerror.png)
+I sorted this out by making the background colour of the buttons transparent and removing the border.
+![Buttons fixed](docs/buttoncorrected.png)
 
 #### Known Bugs
-- Squeak sound
+- Squeak sound - the sound doesn't always play if one mouse is eaten straight after another.
 
 ## TECHNOLOGIES USED
 #### Languages
@@ -93,16 +101,20 @@ Wireframes for desktop and mobile can be found here:
 - JavaScript
 
 #### Libraries/Online Resources
-- Google Fonts
-- Font Awesome
-- Favicon
-- Balsamiq
-- Coolors
-- Chrome DevTools
-- Am I Responsive?
-- Sweet Alert
-- MixKit - https://mixkit.co/
-
+- [Sweet Alert](https://sweetalert2.github.io/) - to create game over alert
+- [MixKit](https://mixkit.co/) - for sound effects
+- [Google Fonts](https://fonts.google.com/) - to select and import font
+- [FontAwesome](https://fontawesome.com/) - used to add icons
+- [GitHub](https://github.com/) - project code stored in GitHub after being pushed
+- [GitPod](https://gitpod.io/workspaces) - used to develop the website
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - used extensively during developing and design process
+- [Balsamiq](https://balsamiq.com/) - used to create wireframes
+- [AmIResponsive?](http://ami.responsivedesign.is/) - used to check the responsiveness on different devices
+- [Coolors](https://coolors.co/) - used to decide on generate colour palette
+- [Favicon](https://favicon.io/) - used to add a snake icon to the user's tab
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - used to test performance of the site
+- [W3C](https://validator.w3.org/) - HTML and CSS validators
+- [Flaticon](https://www.flaticon.com/) - mouse icon
 
 ## DEPLOYMENT
 The project was created in GitPod and deployed to GitHub using the following steps:
