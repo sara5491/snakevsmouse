@@ -115,10 +115,8 @@ I was originally going to have the touch controls on the right-hand side of the 
 - Snake head - add an icon/design to the head of the snake e.g. eyes and a tongue.
 
 ## TESTING
-#### Manual Testing
-
 #### Responsiveness
-Responsive on all devices and screens sizes available on Chrome Device Mode (Chrome DevTools) for simulaton. The site is fully responsive and the game area scales down by device size to ensure a smooth experience on all devices.
+Responsive on all devices and screens sizes available on Chrome DevTools. The game is fully responsive in portrait mode and the game area scales down by device size.
 #### Lighthouse
 Desktop  
 ![Lighthouse desktop score](docs/lighthouse.png) 
