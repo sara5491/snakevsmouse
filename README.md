@@ -118,10 +118,9 @@ I was originally going to have the touch controls on the right-hand side of the 
 #### Responsiveness
 Responsive on all devices and screens sizes available on Chrome DevTools. The game is fully responsive in portrait mode and the game area scales down by device size.
 #### Lighthouse
-Desktop  
-![Lighthouse desktop score](docs/lighthouse.png) 
-
-Mobile
+#### Desktop  
+![Lighthouse desktop score](docs/lighthouse.png)
+#### Mobile
 ![Lighthouse mobile score](docs/lighthousemobile.png) 
 #### Validators
 The HTML file was run through (https://validator.w3.org/) and the CSS file was run through (https://jigsaw.w3.org/css-validator/) and no errors were found. For JavaScript, the file was run through (https://jshint.com/) and no errors were found.
