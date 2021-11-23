@@ -60,6 +60,7 @@ The game should be simple enough that it can be played during a short period e.g
 - As a user I want to view game instructions, if necessary.
 - As a user I want to play the game on a mobile phone or computer.
 - As a user I want to play a simple and straightforward game.
+- As a user I want to easily mute the audio of the game.
 
 ### Design Goals
 I wanted to create a game that is easy to use, can be played on multiple devices, has simple controls and is designed with complementary colours.
@@ -114,13 +115,21 @@ I was originally going to have the touch controls on the right-hand side of the 
 - Snake head - add an icon/design to the head of the snake e.g. eyes and a tongue.
 
 ## TESTING
+#### Manual Testing
+
 #### Responsiveness
+Responsive on all devices and screens sizes available on Chrome Device Mode (Chrome DevTools) for simulaton. The site is fully responsive and the game area scales down by device size to ensure a smooth experience on all devices.
 #### Lighthouse
+Desktop  
+![Lighthouse desktop score](docs/lighthouse.png) 
+
+Mobile
 #### Validators
 The HTML file was run through (https://validator.w3.org/) and the CSS file was run through (https://jigsaw.w3.org/css-validator/) and no errors were found. For JavaScript, the file was run through (https://jshint.com/) and no errors were found.
 
 ## BUGS
 #### Fixed Bugs
+I came across many bugs while creating my game and managed to fix most of them as I went along:  
 1) Snake wasn't increasing in size after eating mouse.  
 - Added unshift to add extra square to snake body.  
 2) Snake was eating mouse but it wasn't disappearing.  
@@ -193,7 +202,8 @@ Instructions from [GitHub Docs](https://docs.github.com/en/github/creating-cloni
 I was inspired by this [Snake game](https://gist.github.com/straker/ff00b4b49669ad3dec890306d348adc4) for the basic idea and outline of the game however I added many different features.  
 This [tutorial](https://www.educative.io/blog/javascript-snake-game-tutorial) along with [this one](https://www.freecodecamp.org/news/how-to-build-a-snake-game-in-javascript/) were helpful in the creation of my game.  
 [W3Schools](https://www.w3schools.com/graphics/game_controllers.asp) - game controllers.  
-[W3Schools](https://www.w3schools.com/graphics/game_movement.asp) - movement.  
+[W3Schools](https://www.w3schools.com/graphics/game_movement.asp) - movement.
+[Mozilla](https://developer.mozilla.org/en-US/docs/Games/Anatomy) - game loops.
 
 #### Media
 - Sound effects were found on [MixKit](https://mixkit.co/)

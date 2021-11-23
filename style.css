@@ -128,14 +128,14 @@ canvas {
  justify-content: center;
  line-height: initial;
  font-size: x-large;
- color: #9F86C0;
+ color: #231942;
 }
 
 /* AUDIO PLAYER */
 #playerOn,
 #playerOff {
  font-size: 18px;
- color: #9F86C0;
+ color: #231942;
  background-color: transparent;
  outline: none;
  border: none;
@@ -146,7 +146,7 @@ canvas {
  border: 2px solid #E0B1CB;
  font-size: x-large;
  font-family: "Londrina Solid";
- color: #9F86C0;
+ color: #231942;
  background-color: transparent;
  outline: none;
  border: none;
@@ -188,3 +188,81 @@ canvas {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (min-width: 320px) {
+    canvas {
+        width: 250px;
+    }
+    #logo {
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .pause, .bttns {
+        font-size: 18px;
+    }
+    #settings {
+        width: auto;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    canvas {
+        width: 340px;
+    }
+    #logo {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    #settings {
+        padding: 0;
+        width: auto;
+    }
+}
+ 
+@media only screen and (min-width: 414px) {
+    canvas {
+        width: 350px;
+    }
+    #logo {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+    #settings {
+        padding: 10px;
+        width: auto;
+    }
+}
+ 
+@media only screen and (min-width: 768px) {
+    canvas {
+        width: 550px;
+    }
+    #logo {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+    #settings {
+        padding: 40px;
+        width: auto;
+    }
+    .pause, .bttns {
+        font-size: 40px;
+    }
+}
+ 
+@media only screen and (min-width: 1024px) {
+    canvas {
+        width: 800px;
+    }
+    #logo {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+    #settings {
+        padding: 40px;
+        width: auto;
+    }
+    .pause, .bttns {
+        font-size: 60px;
+    }
+}

@@ -158,6 +158,7 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
+// ARROW CONTROLS 
 function left() {
     if (snake.dx === 0) {
         snake.dx = -grid;
@@ -187,6 +188,7 @@ function pause() {
     document.querySelector('.pause').innerHTML = paused ? 'Play' : 'Pause';
 }
 
+// INSTRUCTIONS MODAL
 let modalBtn = document.getElementsByClassName('nav-btn');
 for (let i = 0; i < modalBtn.length; i++) {
     modalBtn[i].addEventListener('click', showModal);
