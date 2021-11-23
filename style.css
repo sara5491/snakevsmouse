@@ -127,7 +127,6 @@ canvas {
  font-size: medium;
  justify-content: center;
  line-height: initial;
- font-size: x-large;
  color: #231942;
 }
 
@@ -239,7 +238,7 @@ canvas {
     }
     #logo {
         font-size: 4rem;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     #settings {
         padding: 40px;
@@ -250,19 +249,40 @@ canvas {
     }
 }
  
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px)  
+and (max-width: 1605px) {
     canvas {
-        width: 800px;
+        width: 400px;
     }
     #logo {
         font-size: 4rem;
-        margin-top: 20px;
     }
-    #settings {
-        padding: 40px;
+    #playerOn, #playerOff, #score, #highscoreBox, #how-btn {
+        font-size: 2rem;
         width: auto;
     }
+    #settings {
+        padding: 20px;
+    }
     .pause, .bttns {
-        font-size: 60px;
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1024px) and (max-height: 600px) {  
+    #logo {
+        font-size: 3rem;
+        margin-top: 5px;
+    }
+    canvas {
+        width: 300px;
+    }
+    .pause, .bttns {
+        font-size: 25px;
+    }
+    #settings {
+        width: 500px;
+    }
+    #playerOn, #playerOff, #score, #highscoreBox, #how-btn {
+        font-size: 20px;
     }
 }

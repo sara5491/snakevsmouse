@@ -124,6 +124,7 @@ Desktop
 ![Lighthouse desktop score](docs/lighthouse.png) 
 
 Mobile
+![Lighthouse mobile score](docs/lighthousemobile.png) 
 #### Validators
 The HTML file was run through (https://validator.w3.org/) and the CSS file was run through (https://jigsaw.w3.org/css-validator/) and no errors were found. For JavaScript, the file was run through (https://jshint.com/) and no errors were found.
 
